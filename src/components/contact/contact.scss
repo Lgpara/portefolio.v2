@@ -1,0 +1,73 @@
+.contactContainer{
+    height: 100svh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .textContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            margin-bottom: 4px;
+        }
+        .mail {
+            padding: 8px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            transition: all 0.2s ease-in-out;
+            border: solid 1px rgba(255, 255, 255, 0);
+
+            &:hover {
+                border: solid 1px var(--accent);
+                transform: scale(1.02);
+                * {
+                    color: var(--accent);
+                }
+            }
+            *{
+                transition: all 0.2s ease-in-out;
+            }
+            p {
+                font-size: 30px;
+                margin-right: 20px;
+            }
+            .iconContainer {
+                .fa-copy{
+                    position: absolute;
+                }
+                .fa-check {
+                    opacity: 0;
+                }
+                .icon {
+                    font-size: 32px;
+                }
+                .animCheck {
+                    opacity: 1;
+                }
+            }
+        }
+        .animMailClick {
+            border: solid 1px var(--accent);
+            animation: mailClick 0.7s ease-out forwards;
+            * {
+                color: var(--accent);
+            }
+        }
+    }
+}
+
+@keyframes mailClick {
+    75%{
+        transform: scale(0.85);
+    }
+    95% {
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+

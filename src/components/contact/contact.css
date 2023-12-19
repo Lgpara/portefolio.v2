@@ -1,0 +1,69 @@
+.contactContainer {
+  height: 100svh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactContainer .textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactContainer .textContainer h1 {
+  margin-bottom: 4px;
+}
+.contactContainer .textContainer .mail {
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  border: solid 1px rgba(255, 255, 255, 0);
+}
+.contactContainer .textContainer .mail:hover {
+  border: solid 1px var(--accent);
+  transform: scale(1.02);
+}
+.contactContainer .textContainer .mail:hover * {
+  color: var(--accent);
+}
+.contactContainer .textContainer .mail * {
+  transition: all 0.2s ease-in-out;
+}
+.contactContainer .textContainer .mail p {
+  font-size: 30px;
+  margin-right: 20px;
+}
+.contactContainer .textContainer .mail .iconContainer .fa-copy {
+  position: absolute;
+}
+.contactContainer .textContainer .mail .iconContainer .fa-check {
+  opacity: 0;
+}
+.contactContainer .textContainer .mail .iconContainer .icon {
+  font-size: 32px;
+}
+.contactContainer .textContainer .mail .iconContainer .animCheck {
+  opacity: 1;
+}
+.contactContainer .textContainer .animMailClick {
+  border: solid 1px var(--accent);
+  animation: mailClick 0.7s ease-out forwards;
+}
+.contactContainer .textContainer .animMailClick * {
+  color: var(--accent);
+}
+
+@keyframes mailClick {
+  75% {
+    transform: scale(0.85);
+  }
+  95% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=contact.css.map */

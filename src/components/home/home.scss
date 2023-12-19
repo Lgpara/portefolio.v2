@@ -1,0 +1,46 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100svh;
+    .textContainer {
+        margin-top: -24svh;
+        * {
+            letter-spacing: -1px;
+            word-spacing: 8px;
+        }
+        h1 {
+            b {
+                font-size: 58px;
+            }
+        }
+        p {
+            font-size: 40px;
+            b {
+                font-size: 46px;
+            }
+        }
+        b {
+            color: var(--accent);
+        }
+        .resumeBtn {
+            padding: 4px 12px;
+            background-color: var(--primary);
+            color: var(--background);
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-weight: 900;
+            word-spacing: 4px;
+            transition: all 0.2s ease-in-out;
+            margin-top: 10px;
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+    }
+    
+}

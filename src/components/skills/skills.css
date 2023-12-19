@@ -1,0 +1,28 @@
+.skillsContainer {
+  width: 100%;
+  height: 100svh;
+  border: solid white;
+  padding: 10%;
+}
+.skillsContainer h2 {
+  margin-bottom: 30px;
+}
+.skillsContainer .presentationContainer {
+  margin-bottom: 40px;
+}
+.skillsContainer .stacksContainer .iconsContainer {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  display: flex;
+}
+.skillsContainer .stacksContainer .iconsContainer img {
+  height: 70px;
+  padding: 5px 10px;
+}
+.skillsContainer .stacksContainer .separationBar {
+  height: 1px;
+  width: 50%;
+  background-color: var(--border);
+  margin: 20px auto;
+}/*# sourceMappingURL=skills.css.map */

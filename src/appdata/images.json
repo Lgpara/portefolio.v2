@@ -1,0 +1,48 @@
+{
+    "icons" : {
+        "stacks": [
+            {
+                "name" : "HTML",
+                "source": "./data/images/icons/html.svg"
+            },
+            {
+                "name" : "CSS",
+                "source": "./data/images/icons/css.svg"
+            },
+            {
+                "name" : "SASS",
+                "source": "./data/images/icons/sass.svg"
+            },
+            {
+                "name" : "JavaScript",
+                "source": "./data/images/icons/js.svg"
+            },
+            {
+                "name" : "TypeScript",
+                "source": "./data/images/icons/ts.svg"
+            },
+            {
+                "name" : "React",
+                "source": "./data/images/icons/react.svg"
+            },
+            {
+                "name" : "Next.js",
+                "source": "./data/images/icons/next.svg"
+            }
+        ],
+        "tools" : [
+            {
+                "name" : "Visual Studio Code",
+                "source": "./data/images/icons/vscode.svg"
+            },
+            {
+                "name" : "Node.js",
+                "source": "./data/images/icons/node.svg"
+            },
+            {
+                "name" : "GitHub",
+                "source": "./data/images/icons/gh.svg"
+            }
+        ]
+    }
+}
