@@ -1,7 +1,7 @@
 [
   {
     "titre": "ArgentBank - (OpenClassrooms)",
-    "images": ["./images/projet1/img013.webp", "./images/projet1/img012.webp", "./images/projet1/img0.webp", "./images/projet1/img0.webp"],
+    "images": ["./data/images/projects/placeholder.png"],
     "description": "Creating a React web app with Redux for user authentication. Basic features include: home, login, logout, and profile management. API routes are set up, and the integration is focused on Green Code principles with image optimization.",
     "stacks": ["React, Redux, Sass"],
     "link": {
@@ -11,7 +11,7 @@
   },
   {
     "titre": "Kasa - (OpenClassrooms)",
-    "images": ["./images/projet2/img005.webp", "./images/projet2/img002.webp", "./images/projet2/img003.webp"],
+    "images": ["./data/images/projects/placeholder.png"],
     "description": "Development of a React app based on Figma mockups, including Collapse animations and responsiveness. Constraints include managing photo scrolling in the gallery, hiding buttons if there's only one image, maintaining a constant gallery height, and initializing Collapses in a closed state.",
     "stacks": ["React, Sass"],
     "link": {
@@ -21,7 +21,17 @@
   },
   {
     "titre": "Portefolio Architect - (OpenClassrooms)",
-    "images": ["./images/projet3/img010.webp", "./images/projet3/img009.webp", "./images/projet3/img008.webp", "./images/projet3/img007.webp", "./images/projet3/img006.webp"],
+    "images": ["./data/images/projects/placeholder.png"],
+    "description": "Set up the development environment, create the portfolio presentation page, code the login page, add a modal to handle the addition, deletion, and submission of projects, and dynamically process the API response to update the gallery.",
+    "stacks": ["Javascript"],
+    "link": {
+      "github" : "https://github.com/Lgpara/Projet-6-OpenClassrooms",
+      "website": ""
+    }
+  },
+  {
+    "titre": "Portefolio Architect - (OpenClassrooms)",
+    "images": ["./data/images/projects/placeholder.png"],
     "description": "Set up the development environment, create the portfolio presentation page, code the login page, add a modal to handle the addition, deletion, and submission of projects, and dynamically process the API response to update the gallery.",
     "stacks": ["Javascript"],
     "link": {

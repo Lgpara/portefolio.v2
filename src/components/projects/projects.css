@@ -1,1 +1,72 @@
-/*# sourceMappingURL=projects.css.map */
+.projectsContainer {
+  overflow-x: hidden;
+}
+.projectsContainer .projectCardsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.projectsContainer .projectCardsContainer .projectCard {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.projectsContainer .projectCardsContainer .projectCard:hover img {
+  filter: blur(20px);
+  transition: all 0.25s ease-in-out;
+}
+.projectsContainer .projectCardsContainer .projectCard:hover .links {
+  opacity: 1;
+}
+.projectsContainer .projectCardsContainer .projectCard:hover .infos {
+  opacity: 1;
+  top: 0;
+}
+.projectsContainer .projectCardsContainer .projectCard img {
+  width: 100%;
+  height: 100%;
+}
+.projectsContainer .projectCardsContainer .projectCard .links {
+  transition: all 0.25s ease-in-out;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  z-index: 10;
+}
+.projectsContainer .projectCardsContainer .projectCard .links * {
+  font-size: 30px;
+  padding: 8px;
+  margin: 0 10px;
+  color: var(--background);
+  background-color: var(--text);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.projectsContainer .projectCardsContainer .projectCard .links *:hover {
+  scale: 1.04;
+}
+.projectsContainer .projectCardsContainer .projectCard .infos {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 20px 10px 20px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}/*# sourceMappingURL=projects.css.map */

@@ -13,7 +13,7 @@ export default function Home() {
           Hello, my name is <b>Louis Gerber</b>
         </h1>
         <p>
-          I'm a french <b>Web developper</b>
+          I'm a front-end <b>Web developper</b>
         </p>
         <p>
           This is my <b>Portefolio</b>

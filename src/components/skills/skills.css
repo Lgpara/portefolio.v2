@@ -2,11 +2,12 @@
   width: 100%;
   height: 100svh;
 }
-.skillsContainer h2 {
-  margin-bottom: 30px;
-}
 .skillsContainer .presentationContainer {
   margin-bottom: 40px;
+  display: flex;
+}
+.skillsContainer .presentationContainer .skillBloc {
+  flex: 1;
 }
 .skillsContainer .stacksContainer .iconsContainer {
   width: -moz-fit-content;

@@ -31,7 +31,6 @@ export default function App(){
     return(
         <>
             <Header />
-            <div className="tabHeader"></div>
             <main>
 
                 {sections.map((section)=>(
