@@ -17,6 +17,7 @@
   padding: 0;
 }
 
+
 body {
   background-color: var(--background);
   overflow-x: hidden;
@@ -61,4 +62,24 @@ a {
 }
 section {
   padding: 0 10%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accentlight);
 }

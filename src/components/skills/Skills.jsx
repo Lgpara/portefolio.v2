@@ -17,7 +17,6 @@ export default function Skills() {
             skilled in creating fluid and engaging animations that add a touch
             of personality and interest to my work.
           </p>
-          
         </div>
         <div className="skillBloc">
           <h3>
@@ -30,7 +29,6 @@ export default function Skills() {
             accessible to a wider range of users and ensures that it is always
             easy to use.
           </p>
-          
         </div>
         <div className="skillBloc">
           <h3>
@@ -42,7 +40,6 @@ export default function Skills() {
             accessible to users with disabilities, and I am always looking for
             ways to improve my work for search engines.
           </p>
-         
         </div>
       </div>
       <div className="presentationIcons">
@@ -50,8 +47,8 @@ export default function Skills() {
         <i class="fa-solid fa-expand skillBlocIcon"></i>
         <i class="fa-regular fa-eye skillBlocIcon"></i>
       </div>
+      <h2>I use</h2>
       <div className="stacksContainer">
-        <h2>I use</h2>
         <div className="iconsContainer">
           {stacks.map((stack) => (
             <img src={stack.source} alt={stack.name} className="stackImg" />
