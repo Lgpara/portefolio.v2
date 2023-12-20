@@ -43,11 +43,12 @@
   font-size: 30px;
   padding: 8px;
   margin: 0 10px;
-  color: var(--background);
-  background-color: var(--text);
+  color: var(--accent);
+  background-color: var(--background);
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  border: 2px solid;
+  width: 44px;
+  height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,6 +56,7 @@
   cursor: pointer;
 }
 .projectsContainer .projectCardsContainer .projectCard .links *:hover {
+  color: var(--accentlight);
   scale: 1.04;
 }
 .projectsContainer .projectCardsContainer .projectCard .infos {

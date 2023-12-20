@@ -5,8 +5,12 @@ import Skills from "./components/skills/Skills"
 import Projects from "./components/projects/Projects"
 import Contact from "./components/contact/Contact"
 import Section from "./components/section/Section"
+import { useEffect, useState } from "react"
 
 export default function App(){
+
+  const [activeSection, setActiveSection] = useState(0)
+  const [animOut, setAnimOut] = useState(false)
     const sections = [
         {
           id: "home",
@@ -30,11 +34,12 @@ export default function App(){
 
     return(
         <>
-            <Header />
+            <Header activeSection={activeSection} setActiveSection={setActiveSection} setAnimOut={setAnimOut} />
             <main>
-
-                {sections.map((section)=>(
-                    <section id={section.id}>{section.content}</section>
+                {sections.map((section, index)=>(
+                  <>
+                    {index !== activeSection? <></> : <section className={animOut? "animationSectionIn animationSectionOut" : "animationSectionIn"}>{section.content}</section>}
+                  </>
                 ))}
             </main>
             <Footer />

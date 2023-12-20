@@ -16,17 +16,22 @@ header {
     }
     nav {
         display: flex;
-        a {
+        div {
+            margin-bottom: 1px;
+            cursor: pointer;
             font-size: 28px;
             padding: 0 20px;
             color: var(--primary);
             font-weight: 500;
             transition: all 0.2s ease-in-out;
-            &:hover {
+            &:hover:not(.selectedNav) {
                 transform: translateY(-2px);
                 scale: 1.05;
                 color: var(--accent);
             }
+        }
+        .selectedNav {
+            animation: navAnim 0.5s ease-in-out forwards;
         }
     }
 
@@ -44,5 +49,18 @@ header {
         :nth-child(1) {
             margin-right: 10px;
         }
+    }
+}
+
+@keyframes navAnim {
+    0% {
+        background-color: transparent;
+    }
+    50% {
+        color: var(--background);
+    }
+    100% {
+        color: var(--background);
+        background-color: var(--primary);
     }
 }

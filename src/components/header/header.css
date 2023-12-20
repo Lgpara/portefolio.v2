@@ -18,17 +18,22 @@ header * {
 header nav {
   display: flex;
 }
-header nav a {
+header nav div {
+  margin-bottom: 1px;
+  cursor: pointer;
   font-size: 28px;
   padding: 0 20px;
   color: var(--primary);
   font-weight: 500;
   transition: all 0.2s ease-in-out;
 }
-header nav a:hover {
+header nav div:hover:not(.selectedNav) {
   transform: translateY(-2px);
   scale: 1.05;
   color: var(--accent);
+}
+header nav .selectedNav {
+  animation: navAnim 0.5s ease-in-out forwards;
 }
 header .socialLinksContainer {
   position: absolute;
@@ -44,4 +49,17 @@ header .socialLinksContainer *:hover {
 }
 header .socialLinksContainer :nth-child(1) {
   margin-right: 10px;
+}
+
+@keyframes navAnim {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    color: var(--background);
+  }
+  100% {
+    color: var(--background);
+    background-color: var(--primary);
+  }
 }/*# sourceMappingURL=header.css.map */

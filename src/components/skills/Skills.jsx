@@ -6,13 +6,10 @@ export default function Skills() {
   const tools = img.icons.tools;
   return (
     <div className="skillsContainer">
-        <h2>I do</h2>
+      <h2>I do</h2>
       <div className="presentationContainer">
         <div className="skillBloc">
-          <h3>
-          • Build dynamic websites and web applications from a mockup and create
-            fluid and engaging animations
-          </h3>
+          <h3>• Build dynamic websites and web applications</h3>
           <p>
             I have a strong understanding of HTML, CSS, and JavaScript, and I am
             proficient in using a variety of frameworks and libraries to create
@@ -20,11 +17,11 @@ export default function Skills() {
             skilled in creating fluid and engaging animations that add a touch
             of personality and interest to my work.
           </p>
+          
         </div>
         <div className="skillBloc">
           <h3>
-          • Create responsive web applications that are adapted to all screen
-            sizes
+            • Create responsive web applications adapted to all screen sizes
           </h3>
           <p>
             I am experienced in using responsive design techniques to create web
@@ -33,10 +30,11 @@ export default function Skills() {
             accessible to a wider range of users and ensures that it is always
             easy to use.
           </p>
+          
         </div>
         <div className="skillBloc">
           <h3>
-          • Create high-performance, accessible, and SEO-optimized websites
+            • Create high-performance, accessible, and SEO-optimized websites
           </h3>
           <p>
             I am committed to creating high-performance websites that load
@@ -44,7 +42,13 @@ export default function Skills() {
             accessible to users with disabilities, and I am always looking for
             ways to improve my work for search engines.
           </p>
+         
         </div>
+      </div>
+      <div className="presentationIcons">
+        <i class="fa-brands fa-connectdevelop skillBlocIcon"></i>
+        <i class="fa-solid fa-expand skillBlocIcon"></i>
+        <i class="fa-regular fa-eye skillBlocIcon"></i>
       </div>
       <div className="stacksContainer">
         <h2>I use</h2>

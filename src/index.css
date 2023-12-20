@@ -4,6 +4,7 @@
   --primary: #b1b0c5;
   --secondary: #624862;
   --accent: #9b768f;
+  --accentlight: #c3adbc;
   --border: rgba(155, 118, 143, 0.2);
 }
 
@@ -18,6 +19,7 @@
 
 body {
   background-color: var(--background);
+  overflow-x: hidden;
 }
 
 .padd {
