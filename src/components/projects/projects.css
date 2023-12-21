@@ -1,74 +1,64 @@
-.projectsContainer {
-  overflow-x: hidden;
-}
-.projectsContainer .projectCardsContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
 .projectsContainer .projectCardsContainer .projectCard {
+  display: flex;
+  margin-bottom: 30px;
+}
+.projectsContainer .projectCardsContainer .projectCard .carouselImg {
   position: relative;
+  flex: 3;
   border-radius: 20px;
   overflow: hidden;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.projectsContainer .projectCardsContainer .projectCard:hover img {
-  filter: blur(20px);
-  transition: all 0.25s ease-in-out;
-}
-.projectsContainer .projectCardsContainer .projectCard:hover .links {
-  opacity: 1;
-}
-.projectsContainer .projectCardsContainer .projectCard:hover .infos {
-  opacity: 1;
-  top: 0;
-}
-.projectsContainer .projectCardsContainer .projectCard img {
+.projectsContainer .projectCardsContainer .projectCard .carouselImg .projectImage {
+  animation: carouselImgAnim 2s ease-in-out;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
 }
-.projectsContainer .projectCardsContainer .projectCard .links {
-  transition: all 0.25s ease-in-out;
+.projectsContainer .projectCardsContainer .projectCard .carouselImg .arrowContainer {
+  position: absolute;
   top: 0;
   left: 0;
-  position: absolute;
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  opacity: 0;
-  z-index: 10;
 }
-.projectsContainer .projectCardsContainer .projectCard .links * {
-  font-size: 30px;
-  padding: 8px;
-  margin: 0 10px;
+.projectsContainer .projectCardsContainer .projectCard .carouselImg .arrowContainer * {
+  font-size: 40px;
   color: var(--accent);
-  background-color: var(--background);
-  border-radius: 50%;
-  border: 2px solid;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-}
-.projectsContainer .projectCardsContainer .projectCard .links *:hover {
-  color: var(--accentlight);
-  scale: 1.04;
+  margin: 0 20px;
 }
 .projectsContainer .projectCardsContainer .projectCard .infos {
-  position: absolute;
-  top: 26px;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding: 0 20px 10px 20px;
-  opacity: 0;
-  transition: all 0.2s ease-in-out;
+  flex: 2;
+  padding: 16px;
+}
+.projectsContainer .projectCardsContainer .separationBar {
+  background-color: var(--border);
+  width: 90%;
+  margin: auto;
+  height: 1px;
+  margin-bottom: 30px;
+}
+
+.rowReverse {
+  flex-direction: row-reverse;
+}
+
+@keyframes carouselImgAnim {
+  0% {
+    filter: blur(10px);
+    opacity: 0.5;
+  }
+  50% {
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=projects.css.map */

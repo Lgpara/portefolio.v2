@@ -19,10 +19,6 @@ header nav {
   display: flex;
   width: 100%;
   justify-content: center;
-  /*
-  * Created with https://www.css-gradient.com
-  * Gradient link: https://www.css-gradient.com/?c1=1111171a&c2=111117&gt=l&gd=dtt
-  */
   background: rgba(17, 17, 23, 0.1);
   background: linear-gradient(180deg, rgba(17, 17, 23, 0.2), rgb(17, 17, 23));
 }
@@ -46,7 +42,7 @@ header nav .selectedNav {
 header .socialLinksContainer {
   position: absolute;
   bottom: 10px;
-  right: 16px;
+  right: 10px;
   height: 24px;
 }
 header .socialLinksContainer a * {

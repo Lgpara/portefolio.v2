@@ -11,19 +11,17 @@ header {
     width: 100%;
     pointer-events: none;
     z-index: 9999;
+
     * {
         pointer-events: all;
     }
+
     nav {
         display: flex;
         width: 100%;
         justify-content: center;
-/*
-* Created with https://www.css-gradient.com
-* Gradient link: https://www.css-gradient.com/?c1=1111171a&c2=111117&gt=l&gd=dtt
-*/
-background: rgba(17, 17, 23, 0.1);
-background: linear-gradient(180deg, rgba(17, 17, 23, 0.2), rgba(17, 17, 23, 1.0));
+        background: rgba(17, 17, 23, 0.1);
+        background: linear-gradient(180deg, rgba(17, 17, 23, 0.2), rgba(17, 17, 23, 1.0));
         div {
             margin-bottom: 1px;
             cursor: pointer;
@@ -32,12 +30,14 @@ background: linear-gradient(180deg, rgba(17, 17, 23, 0.2), rgba(17, 17, 23, 1.0)
             color: var(--primary);
             font-weight: 500;
             transition: all 0.2s ease-in-out;
+
             &:hover:not(.selectedNav) {
                 transform: translateY(-2px);
                 scale: 1.05;
                 color: var(--accent);
             }
         }
+
         .selectedNav {
             animation: navAnim 0.5s ease-in-out forwards;
         }
@@ -46,17 +46,20 @@ background: linear-gradient(180deg, rgba(17, 17, 23, 0.2), rgba(17, 17, 23, 1.0)
     .socialLinksContainer {
         position: absolute;
         bottom: 10px;
-        right: 16px;
+        right: 10px;
         height: 24px;
+
         a {
-            *{
+            * {
                 transition: all 0.2s ease-in-out;
+
                 &:hover {
                     color: var(--accent);
                 }
             }
 
         }
+
         :nth-child(1) {
             margin-right: 10px;
         }
@@ -67,9 +70,11 @@ background: linear-gradient(180deg, rgba(17, 17, 23, 0.2), rgba(17, 17, 23, 1.0)
     0% {
         background-color: transparent;
     }
+
     50% {
         color: var(--background);
     }
+
     100% {
         color: var(--background);
         background-color: var(--primary);
