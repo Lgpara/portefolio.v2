@@ -12,7 +12,7 @@
   {
     "titre": "This Portefolio",
     "images": ["./data/images/projects/my-portefolio/img1.png","./data/images/projects/my-portefolio/img2.png","./data/images/projects/my-portefolio/img4.png", "./data/images/projects/my-portefolio/img3.png"],
-    "description": "Creating a React web app with Redux for user authentication. Basic features include: home, login, logout, and profile management. API routes are set up, and the integration is focused on Green Code principles with image optimization.",
+    "description": "My own portefolio using React.",
     "stacks": ["React", "SASS"],
     "link": {
       "github" : "https://github.com/Lgpara/ArgentBank-Website-Final-",
@@ -22,7 +22,7 @@
   {
     "titre": "Linkstasher.io (WIP)",
     "images": ["./data/images/projects/linkstasher/img1.png","./data/images/projects/linkstasher/img2.png"],
-    "description": "Development of a React app based on Figma mockups, including Collapse animations and responsiveness. Constraints include managing photo scrolling in the gallery, hiding buttons if there's only one image, maintaining a constant gallery height, and initializing Collapses in a closed state.",
+    "description": "Linkstasher.io is a web app to store and manage links with ease. I'm building this app using React(will be changed to Next.Js) and a Xata database.",
     "stacks": ["Next.js", "SASS"],
     "link": {
       "github" : "https://github.com/Lgpara/linkstasher.io",
