@@ -11,9 +11,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border: solid 1px var(--border);
 }
 .projectsContainer .projectCardsContainer .projectCard .carouselImg .projectImage {
-  animation: carouselImgAnim 2s ease-in-out;
+  animation: carouselImgAnim 1s ease-in-out;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -33,10 +34,56 @@
   font-size: 40px;
   color: var(--accent);
   margin: 0 20px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.projectsContainer .projectCardsContainer .projectCard .carouselImg .arrowContainer *:hover {
+  color: var(--accentlight);
 }
 .projectsContainer .projectCardsContainer .projectCard .infos {
   flex: 2;
   padding: 16px;
+  position: relative;
+}
+.projectsContainer .projectCardsContainer .projectCard .infos .projectTitle {
+  margin-bottom: 10px;
+}
+.projectsContainer .projectCardsContainer .projectCard .infos .projectStacks {
+  margin-bottom: 10px;
+}
+.projectsContainer .projectCardsContainer .projectCard .infos .projectStacks .projectStacksIcon {
+  width: 40px;
+  margin-right: 10px;
+}
+.projectsContainer .projectCardsContainer .projectCard .infos .linksContainer {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 16px;
+  align-items: flex-end;
+}
+.projectsContainer .projectCardsContainer .projectCard .infos .linksContainer :nth-child(1) {
+  margin-right: 20px;
+}
+.projectsContainer .projectCardsContainer .projectCard .infos .linksContainer .website, .projectsContainer .projectCardsContainer .projectCard .infos .linksContainer .gh {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.projectsContainer .projectCardsContainer .projectCard .infos .linksContainer .website:hover :nth-child(1), .projectsContainer .projectCardsContainer .projectCard .infos .linksContainer .gh:hover :nth-child(1) {
+  color: var(--accentlight);
+}
+.projectsContainer .projectCardsContainer .projectCard .infos .linksContainer .website :nth-child(1), .projectsContainer .projectCardsContainer .projectCard .infos .linksContainer .gh :nth-child(1) {
+  margin-right: 10px;
+  font-size: 30px;
+  color: var(--accent);
+  transition: all 0.2s ease-in-out;
+}
+.projectsContainer .projectCardsContainer .projectCard .infos .linksContainer .website p, .projectsContainer .projectCardsContainer .projectCard .infos .linksContainer .gh p {
+  margin-top: 5px;
 }
 .projectsContainer .projectCardsContainer .separationBar {
   background-color: var(--border);

@@ -3,7 +3,6 @@
         .projectCard {
             display: flex;
             margin-bottom: 30px;
-
             .carouselImg {
                 position: relative;
                 flex: 3;
@@ -13,8 +12,9 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                border: solid 1px var(--border);
                 .projectImage {
-                    animation: carouselImgAnim 2s ease-in-out;
+                    animation: carouselImgAnim 1s ease-in-out;
                     width: 100%;
                     object-fit: cover;
                     height: 100%;
@@ -34,6 +34,11 @@
                         font-size: 40px;
                         color: var(--accent);
                         margin: 0 20px;
+                        cursor: pointer;
+                        transition: all 0.1s ease-in-out;
+                        &:hover {
+                            color: var(--accentlight);
+                        }
                     }
                 }
             }
@@ -41,6 +46,50 @@
             .infos {
                 flex: 2;
                 padding: 16px;
+                position: relative;
+                .projectTitle {
+                    margin-bottom: 10px;
+                }
+                .projectStacks {
+                    margin-bottom: 10px;
+                    .projectStacksIcon {
+                        width: 40px;
+                        margin-right: 10px;
+                    }
+
+                }
+                .linksContainer {
+                    position: absolute;
+                    display: flex;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    padding: 16px;
+                    align-items: flex-end;
+                    :nth-child(1) {
+                        margin-right: 20px;
+                    }
+                    .website , .gh {
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                        &:hover {
+                            :nth-child(1) {
+                                color: var(--accentlight);
+                            }
+                        }
+                        :nth-child(1) {
+                            margin-right: 10px;
+                            font-size: 30px;
+                            color: var(--accent);
+                            transition: all 0.2s ease-in-out;
+                        }
+                        p {
+                            margin-top: 5px;  
+                        }
+                    }
+                }
             }
         }
 

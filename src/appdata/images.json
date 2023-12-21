@@ -43,6 +43,12 @@
                 "name" : "GitHub",
                 "source": "./data/images/icons/gh.svg"
             }
+        ],
+        "techs" : [
+            {
+                "name" : "Redux",
+                "source": "./data/images/icons/redux.svg"
+            }
         ]
     }
 }

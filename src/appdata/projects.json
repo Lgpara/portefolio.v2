@@ -1,41 +1,31 @@
 [
   {
-    "titre": "ArgentBank - (OpenClassrooms)",
-    "images": ["./data/images/projects/placeholder.png", "./data/images/projects/placeholder2.png"],
+    "titre": "This Portefolio",
+    "images": ["./data/images/projects/my-portefolio/img1.png","./data/images/projects/my-portefolio/img2.png","./data/images/projects/my-portefolio/img3.png"],
     "description": "Creating a React web app with Redux for user authentication. Basic features include: home, login, logout, and profile management. API routes are set up, and the integration is focused on Green Code principles with image optimization.",
-    "stacks": ["React, Redux, Sass"],
+    "stacks": ["React", "SASS"],
     "link": {
       "github" : "https://github.com/Lgpara/ArgentBank-Website-Final-",
-      "website": ""
+      "website": "https://www.netlify.com/"
     }
   },
   {
-    "titre": "Kasa - (OpenClassrooms)",
+    "titre": "Linkstasher.io (WIP)",
     "images": ["./data/images/projects/placeholder.png","./data/images/projects/placeholder2.png"],
     "description": "Development of a React app based on Figma mockups, including Collapse animations and responsiveness. Constraints include managing photo scrolling in the gallery, hiding buttons if there's only one image, maintaining a constant gallery height, and initializing Collapses in a closed state.",
-    "stacks": ["React, Sass"],
+    "stacks": ["Next.js", "SASS"],
     "link": {
-      "github" : "https://github.com/Lgpara/P8OC",
+      "github" : "https://github.com/Lgpara/linkstasher.io",
       "website": ""
     }
   },
   {
-    "titre": "Portefolio Architect - (OpenClassrooms)",
+    "titre": "Portefolio - Graphic Designer (WIP)",
     "images": ["./data/images/projects/placeholder.png","./data/images/projects/placeholder2.png"],
     "description": "Set up the development environment, create the portfolio presentation page, code the login page, add a modal to handle the addition, deletion, and submission of projects, and dynamically process the API response to update the gallery.",
-    "stacks": ["Javascript"],
+    "stacks": ["Next.js", "SASS", "TypeScript"],
     "link": {
-      "github" : "https://github.com/Lgpara/Projet-6-OpenClassrooms",
-      "website": ""
-    }
-  },
-  {
-    "titre": "Portefolio Architect - (OpenClassrooms)",
-    "images": ["./data/images/projects/placeholder.png","./data/images/projects/placeholder2.png"],
-    "description": "Set up the development environment, create the portfolio presentation page, code the login page, add a modal to handle the addition, deletion, and submission of projects, and dynamically process the API response to update the gallery.",
-    "stacks": ["Javascript"],
-    "link": {
-      "github" : "https://github.com/Lgpara/Projet-6-OpenClassrooms",
+      "github" : "",
       "website": ""
     }
   }
