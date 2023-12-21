@@ -1,3 +1,6 @@
+.projectsContainer {
+  padding-bottom: 44px;
+}
 .projectsContainer .projectCardsContainer .projectCard {
   display: flex;
   margin-bottom: 30px;

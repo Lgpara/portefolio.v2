@@ -10,7 +10,6 @@ export default function Projects() {
   const [projectsLength, setProjectsLength] = useState(
     projectData.map((project) => project.images.length)
   );
-  console.log(projectsImgSelect);
   function handleChevronClick(projectIndex, way) {
     const newArray = [...projectsImgSelect];
     if (way === "right") {
@@ -70,7 +69,7 @@ export default function Projects() {
       <h2>My work</h2>
       <div className="projectCardsContainer">
         {projectData.map((project, index) => (
-          <>
+          <div key={"projet" + index}>
             <div
               className={
                 index % 2 === 0 ? "projectCard" : "projectCard rowReverse"
@@ -85,11 +84,11 @@ export default function Projects() {
                 />
                 <div className="arrowContainer">
                   <i
-                    class="fa-solid fa-circle-chevron-left"
+                    className="fa-solid fa-circle-chevron-left"
                     onClick={() => handleChevronClick(index, "left")}
                   ></i>
                   <i
-                    class="fa-solid fa-circle-chevron-right"
+                    className="fa-solid fa-circle-chevron-right"
                     onClick={() => handleChevronClick(index, "right")}
                   ></i>
                 </div>
@@ -98,8 +97,8 @@ export default function Projects() {
                 <h3 className="projectTitle">{project.titre}</h3>
 
 
-                <div className="projectStacks">{project.stacks.map((stack)=>(
-                  <img className="projectStacksIcon"  src={getIconSource(stack)} />
+                <div className="projectStacks">{project.stacks.map((stack, index)=>(
+                  <img key={"projectstack" + index} className="projectStacksIcon"  src={getIconSource(stack)} />
                 ))}</div>
 
 
@@ -107,13 +106,13 @@ export default function Projects() {
                 <div className="linksContainer">
                   {project.link.website !== "" ? (
                     <a href={project.link.website} className="website">
-                      <i class="fa-solid fa-globe"></i>
+                      <i className="fa-solid fa-globe"></i>
                       <p>Visit website</p>
                     </a>
                   ) : null}
                   {project.link.github !== "" ? (
                     <a href={project.link.github} className="gh">
-                      <i class="fa-brands fa-github"></i>
+                      <i className="fa-brands fa-github"></i>
                       <p>GitHub Code</p>
                     </a>
                   ) : null}
@@ -123,7 +122,7 @@ export default function Projects() {
             {index < projectData.length - 1 ? (
               <div className="separationBar"></div>
             ) : null}
-          </>
+          </div>
         ))}
       </div>
     </div>

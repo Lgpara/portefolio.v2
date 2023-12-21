@@ -27,14 +27,14 @@ export default function Contact() {
           <p>{mail}</p>
           <div className="iconContainer">
             <i
-              class={
+              className={
                 mailClicked
                   ? "fa-regular fa-copy icon opacityZero"
                   : "fa-regular fa-copy icon"
               }
             ></i>
             <i
-              class={
+              className={
                 mailClicked
                   ? "fa-solid fa-check icon animCheck"
                   : "fa-solid fa-check icon"
@@ -44,10 +44,10 @@ export default function Contact() {
         </div>
         <div className="socialLinksContainer">
           <a href="https://www.linkedin.com/in/louis-gerber-838a33291/">
-            <i class="icon fa-brands fa-linkedin-in"></i>
+            <i className="icon fa-brands fa-linkedin-in"></i>
           </a>
           <a href="https://github.com/Lgpara">
-            <i class="icon fa-brands fa-github"></i>
+            <i className="icon fa-brands fa-github"></i>
           </a>
         </div>
       </div>

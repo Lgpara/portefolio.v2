@@ -43,21 +43,21 @@ export default function Skills() {
         </div>
       </div>
       <div className="presentationIcons">
-        <i class="fa-brands fa-connectdevelop skillBlocIcon"></i>
-        <i class="fa-solid fa-expand skillBlocIcon"></i>
-        <i class="fa-regular fa-eye skillBlocIcon"></i>
+        <i className="fa-brands fa-connectdevelop skillBlocIcon"></i>
+        <i className="fa-solid fa-expand skillBlocIcon"></i>
+        <i className="fa-regular fa-eye skillBlocIcon"></i>
       </div>
       <h2>I use</h2>
       <div className="stacksContainer">
         <div className="iconsContainer">
-          {stacks.map((stack) => (
-            <img src={stack.source} alt={stack.name} className="stackImg" />
+          {stacks.map((stack, index) => (
+            <img key={"iconTools" + index} src={stack.source} alt={stack.name} className="stackImg" />
           ))}
         </div>
         <div className="separationBar"></div>
         <div className="iconsContainer">
-          {tools.map((tool) => (
-            <img src={tool.source} alt={tool.name} className="toolImg" />
+          {tools.map((tool, index) => (
+            <img key={"iconTools" + index} src={tool.source} alt={tool.name} className="toolImg" />
           ))}
         </div>
       </div>
