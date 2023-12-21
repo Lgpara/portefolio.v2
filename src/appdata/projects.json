@@ -22,7 +22,7 @@
   {
     "titre": "Linkstasher.io (WIP)",
     "images": ["./data/images/projects/linkstasher/img1.png","./data/images/projects/linkstasher/img2.png"],
-    "description": "Linkstasher.io is a web app to store and manage links with ease. I'm building this app using React(will be changed to Next.Js) and a Xata database.",
+    "description": "Linkstasher.io is a web app to store and manage links with ease. I'm building this app using React(will be changed to Next.Js) and a Xata database. Anyone will be able to sign-up and store their links in their own profile.",
     "stacks": ["Next.js", "SASS"],
     "link": {
       "github" : "https://github.com/Lgpara/linkstasher.io",
