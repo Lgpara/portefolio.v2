@@ -15,12 +15,39 @@ header {
 header * {
   pointer-events: all;
 }
+header .mobileNavBtnContainer {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 99999;
+}
+header .mobileNavBtnContainer * {
+  font-size: 30px;
+}
+@media only screen and (min-width: 768px) {
+  header .mobileNavBtnContainer {
+    display: none;
+  }
+}
+header .animOpen {
+  animation: animOpen 0.5s ease-in-out forwards;
+}
 header nav {
   display: flex;
   width: 100%;
   justify-content: center;
   background: rgba(17, 17, 23, 0.1);
   background: linear-gradient(180deg, rgba(17, 17, 23, 0.2), rgb(17, 17, 23));
+}
+@media only screen and (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    height: 100svh;
+    justify-content: flex-start;
+    padding-top: 60px;
+    background-color: var(--background);
+    transform: translateX(-110%);
+  }
 }
 header nav div {
   margin-bottom: 1px;
@@ -30,6 +57,12 @@ header nav div {
   color: var(--primary);
   font-weight: 500;
   transition: all 0.2s ease-in-out;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header nav div {
+    padding: 0 10px;
+    font-size: 24px;
+  }
 }
 header nav div:hover:not(.selectedNav) {
   transform: translateY(-2px);
@@ -54,6 +87,11 @@ header .socialLinksContainer a *:hover {
 header .socialLinksContainer :nth-child(1) {
   margin-right: 10px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header .socialLinksContainer :nth-child(1) {
+    margin-right: 5px;
+  }
+}
 
 @keyframes navAnim {
   0% {
@@ -65,5 +103,10 @@ header .socialLinksContainer :nth-child(1) {
   100% {
     color: var(--background);
     background-color: var(--primary);
+  }
+}
+@keyframes animOpen {
+  100% {
+    transform: translateX(0);
   }
 }/*# sourceMappingURL=header.css.map */

@@ -16,7 +16,7 @@ export default function Home() {
           I'm a front-end <b>Web developper</b>
         </p>
         <p>
-          This is my <b>Portefolio</b>
+          This is my <b>Portfolio</b>
         </p>
         <div onClick={openResume} className="resumeBtn">My resume.</div>
       </div>

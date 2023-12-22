@@ -1,4 +1,6 @@
 header {
+
+
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -15,13 +17,35 @@ header {
     * {
         pointer-events: all;
     }
-
+    .mobileNavBtnContainer {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        z-index: 99999;
+        * {
+            font-size: 30px;
+        }
+        @media only screen and (min-width: 768px) {
+            display: none;
+          }
+    }
+    .animOpen{
+        animation: animOpen 0.5s ease-in-out forwards;
+    }
     nav {
         display: flex;
         width: 100%;
         justify-content: center;
         background: rgba(17, 17, 23, 0.1);
         background: linear-gradient(180deg, rgba(17, 17, 23, 0.2), rgba(17, 17, 23, 1.0));
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+            height: 100svh;
+            justify-content: flex-start;
+            padding-top: 60px;
+            background-color: var(--background);
+            transform: translateX(-110%);
+        }
         div {
             margin-bottom: 1px;
             cursor: pointer;
@@ -30,7 +54,10 @@ header {
             color: var(--primary);
             font-weight: 500;
             transition: all 0.2s ease-in-out;
-
+            @media only screen and (min-width: 768px) and (max-width: 1024px) {
+                padding: 0 10px;
+                font-size: 24px;
+              }
             &:hover:not(.selectedNav) {
                 transform: translateY(-2px);
                 scale: 1.05;
@@ -52,7 +79,6 @@ header {
         a {
             * {
                 transition: all 0.2s ease-in-out;
-
                 &:hover {
                     color: var(--accent);
                 }
@@ -61,6 +87,9 @@ header {
         }
 
         :nth-child(1) {
+            @media only screen and (min-width: 768px) and (max-width: 1024px) {
+                margin-right: 5px;
+              }
             margin-right: 10px;
         }
     }
@@ -78,5 +107,11 @@ header {
     100% {
         color: var(--background);
         background-color: var(--primary);
+    }
+}
+
+@keyframes animOpen {
+    100% {
+        transform: translateX(0);
     }
 }

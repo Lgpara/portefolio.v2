@@ -1,6 +1,20 @@
+import { useState } from "react";
 import "./header.css";
 
 export default function Header(props) {
+
+  const [navOpen, setNavOpen] = useState(false)
+  const [navClose, set] = useState(true)
+
+  const handleNavIconClick = () => {
+    if(navOpen === false){
+      setNavOpen(true)
+    }else {
+      
+    }
+  }
+
+
   const setActiveSection = props.setActiveSection;
   const setAnimOut = props.setAnimOut;
   const activeSection = props.activeSection;
@@ -17,7 +31,10 @@ export default function Header(props) {
   };
   return (
     <header>
-      <nav>
+      <div className="mobileNavBtnContainer">
+        <i onClick={()=>setNavOpen(!navOpen)} class="fa-solid fa-bars"></i>
+      </div>
+      <nav className={navOpen ? "animOpen" : null}>
         <div
           onClick={() => handleNav(0)}
           className={activeSection === 0 ? "selectedNav" : ""}

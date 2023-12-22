@@ -10,18 +10,58 @@
 .homeContainer .textContainer {
   margin-top: -24svh;
 }
+@media only screen and (max-width: 1024px) {
+  .homeContainer .textContainer {
+    margin-top: -10svh;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .homeContainer .textContainer {
+    margin-top: -5svh;
+  }
+}
 .homeContainer .textContainer * {
   letter-spacing: -1px;
   word-spacing: 8px;
 }
+@media only screen and (max-width: 1024px) {
+  .homeContainer .textContainer h1 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .homeContainer .textContainer h1 {
+    font-size: 36px;
+  }
+}
 .homeContainer .textContainer h1 b {
   font-size: 58px;
+}
+@media only screen and (max-width: 1024px) {
+  .homeContainer .textContainer h1 b {
+    font-size: 46px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .homeContainer .textContainer h1 b {
+    font-size: 40px;
+  }
 }
 .homeContainer .textContainer p {
   font-size: 40px;
 }
+@media only screen and (max-width: 1024px) {
+  .homeContainer .textContainer p {
+    font-size: 30px;
+  }
+}
 .homeContainer .textContainer p b {
   font-size: 46px;
+}
+@media only screen and (max-width: 1024px) {
+  .homeContainer .textContainer p b {
+    font-size: 36px;
+  }
 }
 .homeContainer .textContainer b {
   color: var(--accent);

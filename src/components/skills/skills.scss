@@ -1,41 +1,69 @@
 .skillsContainer {
     width: 100%;
     height: 100svh;
+
     .presentationContainer {
         margin-bottom: 20px;
         display: flex;
+
+        @media only screen and (max-width: 1024px) {
+            flex-direction: column;
+            padding: 0 15%;
+        }
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+            padding: 0;
+        }
         .skillBloc {
             flex: 1;
             padding: 10px 10px;
+
             h3 {
                 margin-bottom: 5px;
             }
-            p{
+
+            p {
                 color: whitesmoke;
             }
         }
     }
+
     .presentationIcons {
-        margin-bottom: 100px;
+        margin: 20px 0 100px 0;
         display: flex;
+        @media only screen and (max-width: 1024px) {
+            width: 70%;
+            margin: auto auto 100px auto;
+        }
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
         .skillBlocIcon {
             flex: 1;
             font-size: 150px;
             display: flex;
             justify-content: center;
             color: var(--accent);
+            @media only screen and (max-width: 1024px) {
+                font-size: 80px;
+            }
         }
     }
+
     .stacksContainer {
+        padding-bottom: 80px;
         .iconsContainer {
             width: fit-content;
             margin: auto;
             display: flex;
+
             img {
+
                 height: 70px;
                 padding: 5px 10px;
             }
         }
+
         .separationBar {
             height: 1px;
             width: 50%;
@@ -44,6 +72,7 @@
         }
     }
 }
+
 h2 {
     margin-left: 16px;
     margin-top: 40px;

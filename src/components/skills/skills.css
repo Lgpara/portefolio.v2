@@ -6,6 +6,18 @@
   margin-bottom: 20px;
   display: flex;
 }
+@media only screen and (max-width: 1024px) {
+  .skillsContainer .presentationContainer {
+    flex-direction: column;
+    padding: 0 15%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .skillsContainer .presentationContainer {
+    flex-direction: column;
+    padding: 0;
+  }
+}
 .skillsContainer .presentationContainer .skillBloc {
   flex: 1;
   padding: 10px 10px;
@@ -17,8 +29,19 @@
   color: whitesmoke;
 }
 .skillsContainer .presentationIcons {
-  margin-bottom: 100px;
+  margin: 20px 0 100px 0;
   display: flex;
+}
+@media only screen and (max-width: 1024px) {
+  .skillsContainer .presentationIcons {
+    width: 70%;
+    margin: auto auto 100px auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .skillsContainer .presentationIcons {
+    width: 100%;
+  }
 }
 .skillsContainer .presentationIcons .skillBlocIcon {
   flex: 1;
@@ -26,6 +49,14 @@
   display: flex;
   justify-content: center;
   color: var(--accent);
+}
+@media only screen and (max-width: 1024px) {
+  .skillsContainer .presentationIcons .skillBlocIcon {
+    font-size: 80px;
+  }
+}
+.skillsContainer .stacksContainer {
+  padding-bottom: 80px;
 }
 .skillsContainer .stacksContainer .iconsContainer {
   width: -moz-fit-content;

@@ -4,6 +4,9 @@
         .projectCard {
             display: flex;
             margin-bottom: 30px;
+            @media only screen and (max-width: 1024px) {
+                flex-direction: column;
+            }
             .carouselImg {
                 position: relative;
                 flex: 3;
@@ -48,6 +51,9 @@
                 flex: 2;
                 padding: 16px;
                 position: relative;
+                @media only screen and (max-width: 1024px) {
+                    padding: 16px 16px 80px 16px;
+                }
                 .projectTitle {
                     margin-bottom: 10px;
                 }
