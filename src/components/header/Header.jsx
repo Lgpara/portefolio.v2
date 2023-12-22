@@ -35,7 +35,7 @@ export default function Header(props) {
   return (
     <header>
       <div className="mobileNavBtnContainer">
-        <i onClick={()=>setNavOpen(!navOpen)} class="fa-solid fa-bars"></i>
+        <i onClick={()=>setNavOpen(!navOpen)} className="fa-solid fa-bars"></i>
       </div>
       <nav className={navOpen ? "animOpen" : null}>
         <div

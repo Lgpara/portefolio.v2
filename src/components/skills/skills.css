@@ -9,7 +9,7 @@
 @media only screen and (max-width: 1024px) {
   .skillsContainer .presentationContainer {
     flex-direction: column;
-    padding: 0 15%;
+    padding: 0 8%;
   }
 }
 @media only screen and (max-width: 768px) {
