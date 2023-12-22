@@ -15,10 +15,13 @@ export default function Header(props) {
   }
 
 
+
+
   const setActiveSection = props.setActiveSection;
   const setAnimOut = props.setAnimOut;
   const activeSection = props.activeSection;
   const handleNav = (navIndex) => {
+    setNavOpen(false)
     if (navIndex !== activeSection) {
       setAnimOut(true);
       setTimeout(() => {
