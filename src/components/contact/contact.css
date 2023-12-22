@@ -13,6 +13,11 @@
 .contactContainer .textContainer h1 {
   margin-bottom: 4px;
 }
+@media only screen and (max-width: 768px) {
+  .contactContainer .textContainer h1 {
+    font-size: 40px;
+  }
+}
 .contactContainer .textContainer .mail {
   padding: 8px 20px;
   border-radius: 20px;
@@ -36,6 +41,11 @@
 .contactContainer .textContainer .mail p {
   font-size: 30px;
   margin-right: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .contactContainer .textContainer .mail p {
+    font-size: 24px;
+  }
 }
 .contactContainer .textContainer .mail .iconContainer .fa-copy {
   position: absolute;
@@ -64,6 +74,11 @@
   transition: all 0.2s ease-in-out;
   font-size: 44px;
   margin: 0 10px;
+}
+@media only screen and (max-width: 768px) {
+  .contactContainer .textContainer .socialLinksContainer a * {
+    font-size: 38px;
+  }
 }
 
 @keyframes mailClick {

@@ -7,6 +7,9 @@
   --accentlight: #c3adbc;
   --border: rgba(155, 118, 143, 0.2);
 }
+#root {
+  width: 100%;
+}
 
 * {
   font-family: 'Source Sans 3', sans-serif;
@@ -61,7 +64,11 @@ a {
 section {
   padding: 0 10% 0 10%;
 }
-
+@media only screen and (max-width: 768px) {
+  section {
+    padding: 0 20px;
+  }
+}
 /* width */
 ::-webkit-scrollbar {
   width: 12px;

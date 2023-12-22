@@ -6,13 +6,16 @@ header {
     align-items: flex-end;
     border: var(--border) solid 1px;
     position: fixed;
-    width: 100%;
     top: 0;
     left: 0;
     height: 100svh;
-    width: 100%;
+    width: 100%!important;
     pointer-events: none;
     z-index: 9999;
+    @media only screen and (min-width: 768px) {
+        border: none;
+      }
+    
 
     * {
         pointer-events: all;
@@ -62,6 +65,10 @@ header {
                 transform: translateY(-2px);
                 scale: 1.05;
                 color: var(--accent);
+                @media only screen and (max-width: 768px) {
+                    scale: 1;
+                    transform: none;
+                  }
             }
         }
 
