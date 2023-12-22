@@ -2,19 +2,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  border: var(--border) solid 1px;
   position: fixed;
   top: 0;
   left: 0;
-  height: 100svh;
-  width: 100% !important;
+  height: 100%;
+  width: 100vw;
   pointer-events: none;
   z-index: 9999;
-}
-@media only screen and (min-width: 768px) {
-  header {
-    border: none;
-  }
 }
 header * {
   pointer-events: all;
