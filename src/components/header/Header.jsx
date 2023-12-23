@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./header.css";
+import { NavLink } from "react-router-dom";
 
 export default function Header(props) {
 
@@ -13,59 +14,56 @@ export default function Header(props) {
       
     }
   }
+  // const setActiveSection = props.setActiveSection;
+  // const setAnimOut = props.setAnimOut;
+  // const activeSection = props.activeSection;
 
-
-
-
-  const setActiveSection = props.setActiveSection;
-  const setAnimOut = props.setAnimOut;
-  const activeSection = props.activeSection;
   const handleNav = (navIndex) => {
     setNavOpen(false)
-    if (navIndex !== activeSection) {
-      setAnimOut(true);
-      setTimeout(() => {
-        setActiveSection(navIndex);
-        setAnimOut(false);
-      }, 400);
-    } else {
-      return;
-    }
   };
+
   return (
     <header>
       <div className="mobileNavBtnContainer">
         <i onClick={()=>setNavOpen(!navOpen)} className="fa-solid fa-bars"></i>
       </div>
       <nav className={navOpen ? "animOpen" : null}>
-        <div
-          onClick={() => handleNav(0)}
-          className={activeSection === 0 ? "selectedNav" : ""}
-          href=""
+        <NavLink
+        onClick={()=>handleNav()}
+          className={({ isActive, isPending }) =>
+          isPending ? "" : isActive ? "selectedNav navLink" : "navLink"
+        }
+          to="/"
         >
           HOME
-        </div>
-        <div
-          onClick={() => handleNav(1)}
-          className={activeSection === 1 ? "selectedNav" : ""}
-          href=""
+        </NavLink>
+        <NavLink
+        onClick={()=>handleNav()}
+          className={({ isActive, isPending }) =>
+          isPending ? "" : isActive ? "selectedNav navLink" : "navLink"
+        }
+          to="/skills"
         >
           SKILLS
-        </div>
-        <div
-          onClick={() => handleNav(2)}
-          className={activeSection === 2 ? "selectedNav" : ""}
-          href=""
+        </NavLink>
+        <NavLink
+        onClick={()=>handleNav()}
+          className={({ isActive, isPending }) =>
+          isPending ? "" : isActive ? "selectedNav navLink" : "navLink"
+        }
+          to="/projects"
         >
           PROJECTS
-        </div>
-        <div
-          onClick={() => handleNav(3)}
-          className={activeSection === 3 ? "selectedNav" : ""}
-          href=""
+        </NavLink>
+        <NavLink
+        onClick={()=>handleNav()}
+          className={({ isActive, isPending }) =>
+          isPending ? "" : isActive ? "selectedNav navLink" : "navLink"
+        }
+          to="/contact"
         >
           CONTACT
-        </div>
+        </NavLink>
       </nav>
       <div className="socialLinksContainer">
         <a href="https://www.linkedin.com/in/louis-gerber-838a33291/">

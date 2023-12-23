@@ -1,5 +1,8 @@
 .projectsContainer {
     padding-bottom: 44px;
+    @media only screen and (max-width: 768px) {
+        padding-bottom: 20px;
+    }
     .projectCardsContainer {
         .projectCard {
             display: flex;
@@ -17,6 +20,9 @@
                 justify-content: center;
                 align-items: center;
                 border: solid 1px var(--border);
+                @media only screen and (max-width: 1500px) {
+                    height: 400px;
+                }
                 .projectImage {
                     animation: carouselImgAnim 1s ease-in-out;
                     width: 100%;

@@ -39,6 +39,9 @@ header nav {
 }
 @media only screen and (max-width: 768px) {
   header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
     flex-direction: column;
     height: 100svh;
     justify-content: flex-start;
@@ -47,7 +50,7 @@ header nav {
     transform: translateX(-110%);
   }
 }
-header nav div {
+header nav .navLink {
   margin-bottom: 1px;
   cursor: pointer;
   font-size: 28px;
@@ -57,18 +60,18 @@ header nav div {
   transition: all 0.2s ease-in-out;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  header nav div {
+  header nav .navLink {
     padding: 0 10px;
     font-size: 24px;
   }
 }
-header nav div:hover:not(.selectedNav) {
+header nav .navLink:hover:not(.selectedNav) {
   transform: translateY(-2px);
   scale: 1.05;
   color: var(--accent);
 }
 @media only screen and (max-width: 768px) {
-  header nav div:hover:not(.selectedNav) {
+  header nav .navLink:hover:not(.selectedNav) {
     scale: 1;
     transform: none;
   }

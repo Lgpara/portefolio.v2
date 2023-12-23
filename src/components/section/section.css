@@ -1,4 +1,4 @@
-.animationSectionIn {
+.animationSectionIn :nth-child(1) {
   animation: animSectionIn 0.8s ease-in-out forwards;
 }
 

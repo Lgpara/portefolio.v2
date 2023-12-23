@@ -1,5 +1,7 @@
 .animationSectionIn {
-    animation: animSectionIn 0.8s ease-in-out forwards;
+    :nth-child(1) {
+        animation: animSectionIn 0.8s ease-in-out forwards;
+    }
 }
 .animationSectionOut {
     animation: animSectionOut 0.4s ease-in-out forwards;

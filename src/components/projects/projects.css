@@ -1,6 +1,11 @@
 .projectsContainer {
   padding-bottom: 44px;
 }
+@media only screen and (max-width: 768px) {
+  .projectsContainer {
+    padding-bottom: 20px;
+  }
+}
 .projectsContainer .projectCardsContainer .projectCard {
   display: flex;
   margin-bottom: 30px;
@@ -20,6 +25,11 @@
   justify-content: center;
   align-items: center;
   border: solid 1px var(--border);
+}
+@media only screen and (max-width: 1500px) {
+  .projectsContainer .projectCardsContainer .projectCard .carouselImg {
+    height: 400px;
+  }
 }
 .projectsContainer .projectCardsContainer .projectCard .carouselImg .projectImage {
   animation: carouselImgAnim 1s ease-in-out;

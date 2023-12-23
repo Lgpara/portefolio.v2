@@ -1,18 +1,55 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import '@radix-ui/themes/styles.css';
-import App from './App';
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./index.css";
+import Header from "./components/header/Header";
+import Home from "./components/home/Home";
+import Skills from "./components/skills/Skills";
+import Projects from "./components/projects/Projects";
+import Contact from "./components/contact/Contact";
+import Section from "./components/section/Section";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <>
+        <Header />
+        <Section id="home" content={<Home />} />
+      </>
+    ),
+  },
+  {
+    path: "/skills",
+    element: (
+      <>
+        <Header />
+        <Section id="skills" content={<Skills />} />
+      </>
+    ),
+  },
+  {
+    path: "/projects",
+    element: (
+      <>
+        <Header />
+        <Section id="projects" content={<Projects />} />
+      </>
+    ),
+  },
+  {
+    path: "/contact",
+    element: (
+      <>
+        <Header />
+        <Section id="contact" content={<Contact />} />
+      </>
+    ),
+  }
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
