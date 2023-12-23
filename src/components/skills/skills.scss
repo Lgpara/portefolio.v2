@@ -1,6 +1,5 @@
 .skillsContainer {
     width: 100%;
-    height: 100svh;
 
     .presentationContainer {
         margin-bottom: 20px;
@@ -35,7 +34,7 @@
     }
 
     .presentationIcons {
-        margin: 20px 0 100px 0;
+        margin: 20px 0 60px 0;
         display: flex;
         @media only screen and (max-width: 1024px) {
             width: 70%;
@@ -60,7 +59,7 @@
     }
 
     .stacksContainer {
-        padding-bottom: 80px;
+        padding-bottom: 60px;
         .iconsContainer {
             width: fit-content;
             margin: auto;
